@@ -1,9 +1,12 @@
-import { expect } from 'chai'; 
+import { expect } from 'chai';
+import score from './index';
 
-describe('Array', function() {
-  describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      expect([1,2,3].indexOf(4)).to.equal(-1);
+describe('Tennis Game', function() {
+  describe('Score', function() {
+    it('should display the score', function() {
+      const expected = [0,0];
+      const result = score();
+      expect(result).to.deep.equal(expected);
     });
   });
 });
