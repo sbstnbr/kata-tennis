@@ -1,5 +1,5 @@
-import { expect } from 'chai';
-import score from './index';
+var expect = require('chai').expect;
+var score = require('./index');
 
 describe('Tennis Game', function() {
   describe('Score', function() {

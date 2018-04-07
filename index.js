@@ -1,1 +1,1 @@
-export default () => [0,0];
+ module.exports = () => [0,0];

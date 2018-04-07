@@ -4,8 +4,8 @@
   "description": "This Kata is about implementing a simple tennis game. I came up with it while thinking about Wii tennis, where they have simplified tennis, so each set is one game.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register",
-    "test:watch": "mocha --require babel-register --watch"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/sbstnbr/kata-tennis#readme",
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
     "chai": "*",
     "mocha": "*"
   }
