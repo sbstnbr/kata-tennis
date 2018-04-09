@@ -11,3 +11,5 @@ The scoring system is rather simple:
 # Tasks
 - [x] Display player scores
 - [x] Add point to winner
+- [x] Define list of points: 0/15/30/40
+- [ ] First player to wins at 40 wins the game
