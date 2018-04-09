@@ -18,9 +18,10 @@ npm manifest:
     "name": "tennis",
     "version": "1.0.0",
     "description": "This Kata is about implementing a simple tennis game. I came up with it while thinking about Wii tennis, where they have simplified tennis, so each set is one game.",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-      "test": "mocha --require babel-register"
+      "test": "mocha",
+      "test:watch": "mocha --watch"
     },
     "repository": {
       "type": "git",
@@ -33,8 +34,6 @@ npm manifest:
     },
     "homepage": "https://github.com/sbstnbr/kata-tennis#readme",
     "devDependencies": {
-      "babel-preset-env": "^1.6.1",
-      "babel-register": "^6.26.0",
       "chai": "*",
       "mocha": "*"
     }
@@ -881,8 +880,8 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c mocha --require babel-register
-  Directory: /Users/bro/Dev/projects/DF/Katas/tennis
+  Arguments: -c mocha
+  Directory: /Users/bro/Dev/projects/DF/Katas/kata-tennis
   Output:
   
       at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
