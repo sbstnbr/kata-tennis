@@ -18,13 +18,30 @@ describe('Tennis Game', function() {
     game.winsPoint(1);
     expect(game.score).to.deep.equal(expected);
   });
-  it('should define a winner', () => {
+  it('should define a winner if a player wins at 40-0', () => {
     game = new Game();
-    game.winsPoint(0);
     game.winsPoint(0);
     game.winsPoint(0);
     game.winsPoint(0);
     game.winsPoint(0);
     expect(game.winner).to.equal(0);
   });
+  it('should not define a winner if a player wins at 40-40', () => {
+    game = new Game();
+    game.winsPoint(0);
+    game.winsPoint(0);
+    game.winsPoint(0);
+    game.winsPoint(1);
+    game.winsPoint(1);
+    game.winsPoint(1);
+    game.winsPoint(0);
+    expect(game.winner).to.equal(null);
+    game.winsPoint(1);
+    expect(game.winner).to.equal(null);
+    expect(game.score).to.deep.equal([40,40]);
+    game.winsPoint(0);
+    game.winsPoint(0);
+    expect(game.winner).to.equal(0);
+  });
+
 });

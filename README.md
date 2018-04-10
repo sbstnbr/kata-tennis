@@ -1,7 +1,7 @@
 # Rules
 
 The scoring system is rather simple:
-
+¡
 1. Each player can have either of these points in one game 0 15 30 40
 
 2. If you have 40 and you win the ball you win the game, however there are special rules.
@@ -12,4 +12,6 @@ The scoring system is rather simple:
 - [x] Display player scores
 - [x] Add point to winner
 - [x] Define list of points: 0/15/30/40
-- [ ] First player to wins at 40 wins the game
+- [x] First player to wins at 40 wins the game
+- [x] Handle deuce - winner
+- [x] Handle deuce - reset to 40=40
